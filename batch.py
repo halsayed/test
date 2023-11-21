@@ -38,7 +38,7 @@ if __name__ == '__main__':
     wps_total = 0
     delay_total = 0
     for x in range(20):
-        ques = "ما هي عاصمة الامارات؟"
+        ques = "ما هي عاصمة الأمارات؟ وأعطني نبذة عنها وتاريخها"
         text = prompt_ar.format_map({'Question': ques})
         start = timeit.default_timer()
         resp = get_response(text)
@@ -59,7 +59,7 @@ if __name__ == '__main__':
     wps_total = 0
     delay_total = 0
     for x in range(20):
-        ques = "What is the capital of UAE?"
+        ques = "What is the capital of UAE? and provide a brief history about it"
         text = prompt_eng.format_map({'Question': ques})
         start = timeit.default_timer()
         resp = get_response(text)
